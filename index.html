@@ -6,9 +6,50 @@
     <title>Assignment 2</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .banner{
+            background-image: url(assets/hero-bg.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 760px; 
+            width: 100%;
+        }
+        
+        .banner-img{
+            width: 100%;
+            max-width: 350px;
+            height: 350px;
+            align-items: center;
+   
+        }
+        @media screen and (max-width:576px) {
+            .banner{
+            background-image: url(assets/hero-bg.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width:800px;
+            height: 466px;
+            }
+            .banner-img{
+                width: 100%;
+                max-width: 200px;
+                height: 200px;
+                
+            }
+            .banner h1{
+               font-size: 40px;
+            }
+            .navbar{
+               width:800px;
+            }
+         
+        }
+    </style>
 </head>
 <body>
-     <header>
+     <header class="navbar">
         <nav class="w-full bg-blue-950 grid grid-cols-3  px-10 py-6 items-center ">
             <div  class="h-8 text-4xl font-extrabold flex justify-start items-center md:pl-[200px]">
             <h1><span class="text-white">Tech</span><span class="text-pink-900">Wave</span></h1>
@@ -21,7 +62,7 @@
              </ul>
             </div>
              <div class="hidden md:flex justify-end pr-[200px]">
-             <button class="text-white bg-pink-900 text-base w-36 h-11 rounded-[1000px] pl-3 pr-3 pt-2.5 pb-3.5" >Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+             <button class="text-white font-semibold bg-pink-900 text-base w-36 h-11 rounded-[1000px] pl-3 pr-3 pt-2.5 pb-3.5" >Subscribe <i class="fa-solid fa-arrow-right"></i></button>
              </div>
              <div class="flex justify-end w-6 h-6  md:hidden">
                <img src="assets/hamburger-menu.png">
@@ -30,7 +71,28 @@
      </header>
 
      <main>
-
+     <section class="banner flex justify-center">
+      <div class="ml-[200px] mt-[98px]">
+      
+      <div>
+         <i class="fa-light fa-microphone "></i>
+         <img class="banner-img" src="assets/hero-circle.png">
+         
+      </div>
+      <div>
+         <h1 class="text-white text-5xl font-extrabold ">TechWave</h1>
+         
+         <p class="w-[550px] text-white align-middle">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+         <div class="flex gap-2">
+            <button>Listen On Spotify</button>
+            <div class="flex">
+               <img src="assets/message.png">
+               <button>Subscribe</button>
+            </div>
+         </div>
+      </div>
+      </div>
+     </section>
      </main>
 
      <footer>
