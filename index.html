@@ -6,6 +6,7 @@
     <title>Assignment 2</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
     <style>
         .banner{
             background-image: url(assets/hero-bg.png);
@@ -18,10 +19,16 @@
         
         .banner-img{
             width: 100%;
-            max-width: 350px;
-            height: 350px;
+            max-width: 400px;
+            height: 400px;
             align-items: center;
    
+        }
+        .about-contents{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
         }
         @media screen and (max-width:576px) {
             .banner{
@@ -29,7 +36,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            width:800px;
+            width:100%;
             height: 466px;
             }
             .banner-img{
@@ -48,7 +55,7 @@
         }
     </style>
 </head>
-<body>
+<body class="font-inter">
      <header class="navbar">
         <nav class="w-full bg-blue-950 grid grid-cols-3  px-10 py-6 items-center ">
             <div  class="h-8 text-4xl font-extrabold flex justify-start items-center md:pl-[200px]">
@@ -72,27 +79,63 @@
 
      <main>
      <section class="banner flex justify-center">
-      <div class="ml-[200px] mt-[98px]">
+      <div class="ml-[200px] mt-[90px]">
       
       <div>
          <i class="fa-light fa-microphone "></i>
-         <img class="banner-img" src="assets/hero-circle.png">
+         <img class="banner-img " src="assets/hero-circle.png">
          
       </div>
       <div>
-         <h1 class="text-white text-5xl font-extrabold ">TechWave</h1>
+         <h1 class="w-[550px] ml-12 mt-10 text-white text-5xl font-extrabold">TechWave</h1>
          
-         <p class="w-[550px] text-white align-middle">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+         <p class=" text-white mt-2  align-middle">Your daily dose of tech insights, productivity hacks, and personal growth</p>
          <div class="flex gap-2">
-            <button>Listen On Spotify</button>
-            <div class="flex">
-               <img src="assets/message.png">
+            <button class="text-white font-semibold bg-pink-900 text-base w-[201px] h-11 rounded-[1000px] pl-3 pr-3 pt-2.5 pb-3.5"><i class="fa-brands fa-spotify"></i> Listen On Spotify</button>
+            <div class="flex justify-center gap-2 text-green-400 font-semibold border border-green-400  text-base w-[147px] h-11 rounded-[1000px] pl-3 pr-3 pt-2.5 pb-3.5">
+               <img src="assets/message.png" class="w-[18px] h-[18px] mt-0.5">
                <button>Subscribe</button>
             </div>
          </div>
       </div>
       </div>
      </section>
+     <section class="bg-blue-950 w-full pt-[50px] pl-[200px] pr-[200px]" >
+      <h1 class="h-8 text-5xl font-bold text-white flex justify-center mb-6">About The Podcast</h1>
+      
+      <div class="about-contents">
+      
+         <p class="text-white pt-4 leading-5 pb-3">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.</p>
+         <p class="text-white leading-5 pb-3"> We break down complex topics into digestible insights, explore productivity strategies that actually work,</p>
+         <p class="text-white leading-5">
+      and share stories of personal growth from industry leaders.</p>
+      <br><br>
+
+         <p class="text-white">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+      </div>
+      
+      <div class="grid grid-cols-4 gap-20 justify-center pl-[200px] pr-[200px] ">
+         <div>
+           <h1>150K+</h1>
+           <p>MONTHLY LISTENERS</p>
+         </div>
+         <div>
+            <h1>200+</h1>
+           <p>EPISODES PUBLISHED </p>
+         </div>
+         <div>
+            <h1>4.9<i class="fa-solid fa-star"></i></h1>
+           <p>AVERAGE RATING</p>
+         </div>
+         <div>
+            <h1>50+</h1>
+           <p>INDUSTRY EXPERTS</p>
+         </div>
+      </div>
+     
+   </section>
+     
+
      </main>
 
      <footer>
