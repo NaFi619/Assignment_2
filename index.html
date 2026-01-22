@@ -16,11 +16,20 @@
             height: 760px; 
             width: 100%;
         }
+        .circle-img{
+            background-image: url(assets/hero-circle.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width:400px;
+            height: 400px;
+
+        }
         
         .banner-img{
             width: 100%;
-            max-width: 400px;
-            height: 400px;
+            max-width: 116.657px;
+            height: 175px;
             align-items: center;
    
         }
@@ -88,18 +97,18 @@
      </header>
 
      <main>
-     <section class="banner flex justify-center">
-      <div class="ml-[200px] mt-[90px]">
+     <section class="banner w-full flex justify-center align-middle items-center pl-[200px] pb-[100px]">
+      <div class="">
       
-      <div>
-         <i class="fa-light fa-microphone "></i>
-         <img class="banner-img " src="assets/hero-circle.png">
+      <div class="circle-img flex justify-center align-middle items-center">
+         <img src="assets/microphone.png" alt="microphone" class="banner-img " >
          
       </div>
-      <div>
-         <h1 class="w-[550px] ml-12 mt-10 text-white text-5xl font-extrabold">TechWave</h1>
-         
-         <p class=" text-white mt-2  align-middle">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+      <div class="flex-1 justify-center">
+         <h1 class="w-[550px] ml-12 mt-10 text-white text-6xl font-extrabold">TechWave</h1>
+         <div>
+         <p class=" text-white text-[16px] mt-2 mb-2  align-middle">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+         </div>
          <div class="flex gap-2">
             <button class="text-white font-semibold bg-pink-900 text-base w-[201px] h-11 rounded-[1000px] pl-3 pr-3 pt-2.5 pb-3.5"><i class="fa-brands fa-spotify"></i> Listen On Spotify</button>
             <div class="flex justify-center gap-2 text-green-400 font-semibold border border-green-400  text-base w-[147px] h-11 rounded-[1000px] pl-3 pr-3 pt-2.5 pb-3.5">
