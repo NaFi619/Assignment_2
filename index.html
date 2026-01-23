@@ -69,6 +69,9 @@
             .navbar{
                width:100%;
             }
+            .footer {
+    width: 100%;
+  }
          
 
          
@@ -129,11 +132,11 @@
          <p class="hidden lg:block text-white leading-5 lg:pb-3"> We break down complex topics into digestible insights, explore productivity strategies that actually work,</p>
          <p class="hidden lg:block text-white leading-5">
       and share stories of personal growth from industry leaders.</p>
-      <p class="sm:block text-white text-[16px] leading-5 flex justify-center">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.
+      <p class="lg:hidden sm:block text-white text-[16px] leading-5 flex flex-wrap sm:justify-center ">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
 </p>
       <br><br>
 
-         <p class="text-white">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+         <p class="hidden lg:block text-white">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
       </div>
       
       <div class="grid sm:grid-cols-2 lg:grid-cols-4  lg:gap-20 sm:gap-10 justify-center lg:pl-[200px] lg:pr-[200px] border border-t-blue-900 border-l-blue-950 border-r-blue-950 border-b-blue-950 mt-20">
@@ -297,33 +300,44 @@
    </section>
 
      </main>
-
      <footer>
-      <section class="footer">
-         <div class="w-full flex-1 justify-center py-36">
-            <div class="h-8 text-7xl font-extrabold flex justify-center items-center mb-8 ">
-                 <h1><h1><span class="text-white">Tech</span><span class="text-pink-900">Wave</span></h1></h1>
-            </div>
-            <div class="flex justify-center items-center gap-20 mb-8">
-               <div class="flex gap-2">
-                   <img src="assets/spotify.png" alt="spotify" class="w-6 h-6"><p class="font-normal text-[16px] text-white">Spotify</p>
-               </div>
-               <div class="flex gap-2">
-                   <img src="assets/apple-podcast.png" alt="Apple Podcasts" class="w-6 h-6"><p class="font-normal text-[16px] text-white">Apple Podcasts</p>
-               </div>
-               <div class="flex gap-2">
-                   <img src="assets/youtube-podcast.png" alt="youtube" class="w-6 h-6"><p class="font-normal text-[16px] text-white">Youtube</p>
-               </div>
-               <div class="flex gap-2">
-                   <img src="assets/twitter.png" alt="twitter" class="w-6 h-6"><p class="font-normal text-[16px] text-white">Twitter</p>
-               </div>
-            </div>
-            <div class="flex justify-center items-center ">
-               <p class="text-[16px] text-white">© 2026 TechWave Podcast. All rights reserved.</p>
-            </div>
-         </div>
-      </section>
+  <section class="footer w-full">
+    <div class="w-full flex flex-col items-center justify-center 
+                py-16 sm:py-32 lg:py-27 px-4">
 
-     </footer>
+      <div class="font-extrabold text-4xl sm:text-5xl lg:text-7xl mb-8">
+        <span class="text-white">Tech</span>
+        <span class="text-pink-900">Wave</span>
+      </div>
+      <div class="grid grid-cols-2 gap-6 sm:grid-cols-2  lg:flex lg:justify-center lg:gap-20 mb-8">
+
+        <div class="flex items-center gap-2 text-white">
+          <img src="assets/spotify.png" class="w-6 h-6" />
+          <span>Spotify</span>
+        </div>
+
+        <div class="flex items-center gap-2 text-white">
+          <img src="assets/apple-podcast.png" class="w-6 h-6" />
+          <span>Apple Podcasts</span>
+        </div>
+
+        <div class="flex items-center gap-2 text-white">
+          <img src="assets/youtube-podcast.png" class="w-6 h-6" />
+          <span>YouTube</span>
+        </div>
+
+        <div class="flex items-center gap-2 text-white">
+          <img src="assets/twitter.png" class="w-6 h-6" />
+          <span>Twitter</span>
+        </div>
+      </div>
+      <p class="text-sm sm:text-base text-white text-center">
+        © 2026 TechWave Podcast. All rights reserved.
+      </p>
+    </div>
+  </section>
+</footer>
+
+     
 </body>
 </html>
